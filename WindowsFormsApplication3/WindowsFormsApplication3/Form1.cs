@@ -18,14 +18,20 @@ namespace WindowsFormsApplication3
         public Form1()
         {
             InitializeComponent(); 
+            
+        }
+        public void CargarDatos(ProductosBL productosBL, CategoriasBL categoriaBL)
+        {
 
-            var ProductosBL = new ProductosBL();
+
             listadeProductosBindingSource1.DataSource = ProductosBL.ListadeProductos;
-
-            var CategoriasBL = new CategoriasBL();
+            
             listadeCategoriasBindingSource.DataSource = CategoriasBL.ListadeCategorias;
         }
 
-       
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

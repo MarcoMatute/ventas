@@ -6,21 +6,24 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApplication3.modelos
 {
-    public class Categoria
+    public class Ciudad
     {
-
         public int Id { get; set; }
-        public string Descripcion { get; set;}
-
-        public Categoria()
+        public string Descripcion { get; set; }
+        public Ciudad()
         {
 
         }
 
-        public Categoria(int id, string descripcion)
+        public Ciudad()
+        {
+
+        }
+        public Ciudad(int id, string descripcion)
         {
             Id = id;
             Descripcion = descripcion;
         }
+
     }
 }

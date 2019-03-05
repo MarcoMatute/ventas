@@ -13,6 +13,12 @@ namespace WindowsFormsApplication3.modelos
         public double Precio { get; set; }
         public int CategoriaId { get; set; }
         public Categoria categoria { get; set; }
+
+        public Producto()
+        {
+            Categoria = new Categoria(1,"Laptops");
+            CategoriaId = Categoria.Id;
+        }
              
 
         public Producto(int id, string descripcion, double precio,Categoria categoria)
