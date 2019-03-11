@@ -14,7 +14,7 @@ namespace WindowsFormsApplication3.BL
 
         public CategoriasBL()
         {
-            ListadeCategorias = new BindingList<Categoria>();
+            ListadeCategorias = new System.ComponentModel.BindingList<Categoria>();
             CrearDatosdePrueba();
        
         }

@@ -18,11 +18,16 @@ namespace WindowsFormsApplication3
         }
 
         public void cargarDatos(ClientesBL clientesBL, CiudadBL ciudadesBL)
-        {
+        
             listadeClientesBindingSource.DataSource = clientesBL.ListadeClientes;
             listadeCiudadesBindingSource.DataSource = ciudadesBL.ListadeCiudades;
 
         private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clientesBLBindingSource_CurrentChanged(object sender, EventArgs e)
         {
 
         }

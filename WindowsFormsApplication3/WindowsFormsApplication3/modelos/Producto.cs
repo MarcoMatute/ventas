@@ -26,7 +26,7 @@ namespace WindowsFormsApplication3.modelos
             Id = id;
             Descripcion = descripcion;
             Precio = precio;
-            //Categoria = categoria;
+            Categoria = categoria;
             CategoriaId = categoria.Id;
         }
     }

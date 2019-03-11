@@ -15,7 +15,7 @@ namespace WindowsFormsApplication3.modelos
 
         }
 
-        public Ciudad()
+       public Ciudad()
         {
 
         }

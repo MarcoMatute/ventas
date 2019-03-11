@@ -14,7 +14,7 @@ namespace WindowsFormsApplication3.BL
 
         public ProductosBL()
         {
-            ListadeProductos = new BindingList<Producto>();
+            ListadeProductos = new System.ComponentModel.BindingList<Producto>();
             CrearDatosdePrueba();
         }
         private void CrearDatosdePrueba()

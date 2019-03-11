@@ -14,7 +14,7 @@ namespace WindowsFormsApplication3.BL
 
         public CiudadBL()
         {
-            ListadeCiudades = new BindingList<Ciudad>();
+            ListadeCiudades = new System.ComponentModel.BindingList<Ciudad>();
             CrearDatosdePrueba();
         }
 
