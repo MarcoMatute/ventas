@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ventas.Properties
+namespace Ventas.Properties
 {
 
 
