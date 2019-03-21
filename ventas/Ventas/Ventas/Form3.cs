@@ -24,17 +24,17 @@ namespace Ventas
         {
             _facturasBL = facturasBL;
 
-            listadeFacurasBindingSource.DataSource = facturasBL.ListadeFacuras;
+            listadeFacturasBindingSource.DataSource = facturasBL.ListadeFacturas;
             listadeClientesBindingSource.DataSource = clientesBL.ListadeClientes;
             listadeProductosBindingSource.DataSource = productosBL.ListadeProductos;
         }
 
         private void facturaDetalleDataGridView_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-            var factura = (Factura)listadeFacurasBindingSource.Current;
+            var factura = (Factura)listadeFacturasBindingSource.Current;
             factura.CalcularTotalFactura();
 
-            listadeFacurasBindingSource.ResetBindings(false);
+            listadeFacturasBindingSource.ResetBindings(false);
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -45,7 +45,7 @@ namespace Ventas
         private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
         {
             _facturasBL.NuevaFactura();
-            listadeFacurasBindingSource.MoveLast();
+            listadeFacturasBindingSource.MoveLast();
         }
     }
 }

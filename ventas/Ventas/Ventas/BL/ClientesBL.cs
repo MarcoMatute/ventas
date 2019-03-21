@@ -20,11 +20,11 @@ namespace Ventas.BL
 
         private void CrearDatosdePrueba()
         {
-            var ciudad1 = new Ciudad(1, "Comayagua");
-            var ciudad2 = new Ciudad(2, "Puerto Cortes");
+            var ciudad1 = new Ciudad(1, "San Pedro Sula");
+            var ciudad2 = new Ciudad(2, "Tegucigalpa");
 
-            var cliente1 = new Cliente(1, "Jose Caceres", "32987634", "Cmyg", ciudad1);
-            var cliente2 = new Cliente(2, "Juan Perez", "92384432", "Pto Cortes", ciudad2);
+            var cliente1 = new Cliente(1, "Juan Perez", "99558877", "SPS", ciudad1);
+            var cliente2 = new Cliente(2, "Maria Martinez", "88557744", "Tegus", ciudad2);
 
             ListadeClientes.Add(cliente1);
             ListadeClientes.Add(cliente2);

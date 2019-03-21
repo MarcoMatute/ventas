@@ -8,7 +8,7 @@ using Ventas.BL;
 
 namespace Ventas.Modelos
 {
-    public class Factura
+    public class Compra
     {
         public int Id { get; set; }
         public DateTime Fecha { get; set; }
@@ -22,21 +22,21 @@ namespace Ventas.Modelos
 
         public bool Activo { get; set; }
 
-        public BindingList<FacturaDetalle> FacturaDetalle { get; set; }
+        public BindingList<CompraDetalle> CompraDetalle { get; set; }
 
-        public Factura()
+        public Compra()
         {
             Fecha = DateTime.Now;
             Activo = true;
-            FacturaDetalle = new BindingList<FacturaDetalle>();
+            CompraDetalle = new BindingList<CompraDetalle>();
         }
 
-        public void CalcularTotalFactura()
+        public void CalcularTotalCompra()
         {
             var productosBL = new ProductosBL();
 
             double subtotal = 0;
-            foreach (var detalle in FacturaDetalle)
+            foreach (var detalle in CompraDetalle)
             {
                 var precio = productosBL.ObtenerPrecio(detalle.ProductoId);
 
@@ -50,7 +50,7 @@ namespace Ventas.Modelos
 
     }
 
-    public class FacturaDetalle
+    public class CompraDetalle
     {
         public int Id { get; set; }
 
@@ -61,7 +61,7 @@ namespace Ventas.Modelos
         public double Precio { get; set; }
         public double Total { get; set; }
 
-        public FacturaDetalle()
+        public CompraDetalle()
         {
             Cantidad = 1;
             ProductoId = 1;

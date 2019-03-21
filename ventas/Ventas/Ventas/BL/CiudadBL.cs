@@ -20,8 +20,8 @@ namespace Ventas.BL
 
         private void CrearDatosdePrueba()
         {
-            var ciudad1 = new Ciudad(1, "Comayagua");
-            var ciudad2 = new Ciudad(2, "Puerto Cortes");
+            var ciudad1 = new Ciudad(1, "San Pedro Sula");
+            var ciudad2 = new Ciudad(2, "Tegucigalpa");
 
             ListadeCiudades.Add(ciudad1);
             ListadeCiudades.Add(ciudad2);

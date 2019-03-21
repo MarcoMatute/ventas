@@ -1,0 +1,14 @@
+C:\Users\marco\OneDrive\Documentos\Proyectos L2\ventas\Ventas\Ventas\bin\Debug\Ventas.exe.config
+C:\Users\marco\OneDrive\Documentos\Proyectos L2\ventas\Ventas\Ventas\bin\Debug\Ventas.exe
+C:\Users\marco\OneDrive\Documentos\Proyectos L2\ventas\Ventas\Ventas\bin\Debug\Ventas.pdb
+C:\Users\marco\OneDrive\Documentos\Proyectos L2\ventas\Ventas\Ventas\obj\Debug\Ventas.csprojResolveAssemblyReference.cache
+C:\Users\marco\OneDrive\Documentos\Proyectos L2\ventas\Ventas\Ventas\obj\Debug\Ventas.Form1.resources
+C:\Users\marco\OneDrive\Documentos\Proyectos L2\ventas\Ventas\Ventas\obj\Debug\Ventas.Form2.resources
+C:\Users\marco\OneDrive\Documentos\Proyectos L2\ventas\Ventas\Ventas\obj\Debug\Ventas.Form3.resources
+C:\Users\marco\OneDrive\Documentos\Proyectos L2\ventas\Ventas\Ventas\obj\Debug\Ventas.Form4.resources
+C:\Users\marco\OneDrive\Documentos\Proyectos L2\ventas\Ventas\Ventas\obj\Debug\Ventas.Menu.resources
+C:\Users\marco\OneDrive\Documentos\Proyectos L2\ventas\Ventas\Ventas\obj\Debug\Ventas.Properties.Resources.resources
+C:\Users\marco\OneDrive\Documentos\Proyectos L2\ventas\Ventas\Ventas\obj\Debug\Ventas.csproj.GenerateResource.Cache
+C:\Users\marco\OneDrive\Documentos\Proyectos L2\ventas\Ventas\Ventas\obj\Debug\Ventas.exe
+C:\Users\marco\OneDrive\Documentos\Proyectos L2\ventas\Ventas\Ventas\obj\Debug\Ventas.pdb
+C:\Users\marco\OneDrive\Documentos\Proyectos L2\ventas\Ventas\Ventas\obj\Debug\Ventas.Form5.resources

@@ -13,6 +13,7 @@ namespace Ventas.Modelos
         public double Precio { get; set; }
         public int CategoriaId { get; set; }
         public Categoria Categoria { get; set; }
+        //public double Costo { get; set; }
 
         public Producto()
         {

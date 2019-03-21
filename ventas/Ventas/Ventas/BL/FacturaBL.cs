@@ -10,12 +10,12 @@ namespace Ventas.BL
 {
     public class FacturaBL
     {
-        public BindingList<Factura> ListadeFacuras { get; set; }
+        public BindingList<Factura> ListadeFacturas { get; set; }
         public int NumeroFactura { get; set; }
 
         public FacturaBL()
         {
-            ListadeFacuras = new BindingList<Factura>();
+            ListadeFacturas = new BindingList<Factura>();
             NumeroFactura = 1;
         }
 
@@ -24,7 +24,7 @@ namespace Ventas.BL
             var nuevaFactura = new Factura();
             nuevaFactura.Id = NumeroFactura;
 
-            ListadeFacuras.Add(nuevaFactura);
+            ListadeFacturas.Add(nuevaFactura);
             NumeroFactura += 1;
         }
     }

@@ -6,25 +6,27 @@ using System.Threading.Tasks;
 
 namespace Ventas.Modelos
 {
-    public class Cliente
+    public class Proveedores
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
+        public string Contacto { get; set; }
         public string Telefono { get; set; }
         public string Direccion { get; set; }
         public int CiudadId { get; set; }
         public Ciudad Ciudad { get; set; }
 
-        public Cliente()
+        public Proveedores()
         {
             Ciudad = new Ciudad(1, "San Pedro Sula");
             CiudadId = Ciudad.Id;
         }
 
-        public Cliente(int id, string nombre, string telefono, string direccion, Ciudad ciudad)
+        public Proveedores(int id, string nombre,string contacto, string telefono, string direccion, Ciudad ciudad)
         {
             Id = id;
             Nombre = nombre;
+            Contacto = contacto;
             Telefono = telefono;
             Direccion = direccion;
             Ciudad = ciudad;
