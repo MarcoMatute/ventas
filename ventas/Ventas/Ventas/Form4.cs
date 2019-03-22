@@ -20,7 +20,7 @@ namespace Ventas
         public void cargarDatos(ProveedoresBL proveedoresBL, CiudadBL ciudadesBL)
         {
             listadeProveedoresBindingSource.DataSource = proveedoresBL.ListadeProveedores;
-            listadeProveedoresBindingSource.DataSource = ciudadesBL.ListadeCiudades;
+            listadeCiudadesBindingSource.DataSource = ciudadesBL.ListadeCiudades;
         }
 
        // private void Form4_Load(object sender, EventArgs e)

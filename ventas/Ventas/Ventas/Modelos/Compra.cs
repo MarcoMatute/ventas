@@ -13,8 +13,8 @@ namespace Ventas.Modelos
         public int Id { get; set; }
         public DateTime Fecha { get; set; }
 
-        public int ClienteId { get; set; }
-        public Cliente Cliente { get; set; }
+        public int ProveedorId { get; set; }
+        //public Proveedor Proveedor { get; set; }
 
         public double Subtotal { get; set; }
         public double Impuesto { get; set; }
