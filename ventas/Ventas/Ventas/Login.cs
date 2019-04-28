@@ -53,5 +53,10 @@ namespace Ventas
         {
             _usuariosBL = usuariosBL;
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

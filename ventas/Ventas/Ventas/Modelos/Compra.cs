@@ -19,6 +19,7 @@ namespace Ventas.Modelos
         public double Subtotal { get; set; }
         public double Impuesto { get; set; }
         public double Total { get; set; }
+        public byte [] Foto { get; set; }
 
         public bool Activo { get; set; }
 

@@ -60,13 +60,17 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.listadeProveedoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listadeComprasDataGridView = new System.Windows.Forms.DataGridView();
-            this.compraDetalleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.compraDetalleBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             activoLabel = new System.Windows.Forms.Label();
             clienteIdLabel = new System.Windows.Forms.Label();
             fechaLabel = new System.Windows.Forms.Label();
@@ -80,6 +84,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.listadeProveedoresBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listadeComprasDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.compraDetalleBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // activoLabel
@@ -121,7 +126,7 @@
             // impuestoLabel
             // 
             impuestoLabel.AutoSize = true;
-            impuestoLabel.Location = new System.Drawing.Point(250, 392);
+            impuestoLabel.Location = new System.Drawing.Point(334, 404);
             impuestoLabel.Name = "impuestoLabel";
             impuestoLabel.Size = new System.Drawing.Size(53, 13);
             impuestoLabel.TabIndex = 9;
@@ -130,7 +135,7 @@
             // subtotalLabel
             // 
             subtotalLabel.AutoSize = true;
-            subtotalLabel.Location = new System.Drawing.Point(250, 366);
+            subtotalLabel.Location = new System.Drawing.Point(334, 378);
             subtotalLabel.Name = "subtotalLabel";
             subtotalLabel.Size = new System.Drawing.Size(49, 13);
             subtotalLabel.TabIndex = 11;
@@ -139,7 +144,7 @@
             // totalLabel
             // 
             totalLabel.AutoSize = true;
-            totalLabel.Location = new System.Drawing.Point(250, 418);
+            totalLabel.Location = new System.Drawing.Point(334, 430);
             totalLabel.Name = "totalLabel";
             totalLabel.Size = new System.Drawing.Size(34, 13);
             totalLabel.TabIndex = 13;
@@ -175,7 +180,7 @@
             this.listadeComprasBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.listadeComprasBindingNavigator.Name = "listadeComprasBindingNavigator";
             this.listadeComprasBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.listadeComprasBindingNavigator.Size = new System.Drawing.Size(924, 25);
+            this.listadeComprasBindingNavigator.Size = new System.Drawing.Size(653, 25);
             this.listadeComprasBindingNavigator.TabIndex = 0;
             this.listadeComprasBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -302,7 +307,7 @@
             // impuestoTextBox
             // 
             this.impuestoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeComprasBindingSource, "Impuesto", true));
-            this.impuestoTextBox.Location = new System.Drawing.Point(310, 389);
+            this.impuestoTextBox.Location = new System.Drawing.Point(394, 401);
             this.impuestoTextBox.Name = "impuestoTextBox";
             this.impuestoTextBox.Size = new System.Drawing.Size(200, 20);
             this.impuestoTextBox.TabIndex = 10;
@@ -310,7 +315,7 @@
             // subtotalTextBox
             // 
             this.subtotalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeComprasBindingSource, "Subtotal", true));
-            this.subtotalTextBox.Location = new System.Drawing.Point(310, 363);
+            this.subtotalTextBox.Location = new System.Drawing.Point(394, 375);
             this.subtotalTextBox.Name = "subtotalTextBox";
             this.subtotalTextBox.Size = new System.Drawing.Size(200, 20);
             this.subtotalTextBox.TabIndex = 12;
@@ -318,7 +323,7 @@
             // totalTextBox
             // 
             this.totalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeComprasBindingSource, "Total", true));
-            this.totalTextBox.Location = new System.Drawing.Point(310, 415);
+            this.totalTextBox.Location = new System.Drawing.Point(394, 427);
             this.totalTextBox.Name = "totalTextBox";
             this.totalTextBox.Size = new System.Drawing.Size(200, 20);
             this.totalTextBox.TabIndex = 14;
@@ -351,15 +356,10 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewCheckBoxColumn1});
             this.listadeComprasDataGridView.DataSource = this.listadeComprasBindingSource;
-            this.listadeComprasDataGridView.Location = new System.Drawing.Point(0, 146);
+            this.listadeComprasDataGridView.Location = new System.Drawing.Point(31, 185);
             this.listadeComprasDataGridView.Name = "listadeComprasDataGridView";
             this.listadeComprasDataGridView.Size = new System.Drawing.Size(519, 152);
             this.listadeComprasDataGridView.TabIndex = 15;
-            // 
-            // compraDetalleBindingSource
-            // 
-            this.compraDetalleBindingSource.DataMember = "CompraDetalle";
-            this.compraDetalleBindingSource.DataSource = this.listadeComprasBindingSource;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -401,11 +401,53 @@
             this.dataGridViewCheckBoxColumn1.HeaderText = "Activo";
             this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
             // 
+            // compraDetalleBindingSource
+            // 
+            this.compraDetalleBindingSource.DataMember = "CompraDetalle";
+            this.compraDetalleBindingSource.DataSource = this.listadeComprasBindingSource;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.listadeComprasBindingSource, "Foto", true));
+            this.pictureBox1.Location = new System.Drawing.Point(357, 28);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(137, 105);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(337, 139);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Agregar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(428, 139);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Remover";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(924, 477);
+            this.ClientSize = new System.Drawing.Size(653, 477);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.listadeComprasDataGridView);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(activoLabel);
@@ -431,6 +473,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.listadeProveedoresBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listadeComprasDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.compraDetalleBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -470,5 +513,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

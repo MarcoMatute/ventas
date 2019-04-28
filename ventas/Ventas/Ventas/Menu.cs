@@ -121,5 +121,23 @@ namespace Ventas
 
             formReportedeVentas.Show();
         }
+
+        private void reporteDeProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formReporteProveedores = new FormReporteProveedores();
+            formReporteProveedores.CargarDatos(_proveedoresBL);
+            formReporteProveedores.MdiParent = this;
+
+            formReporteProveedores.Show();
+        }
+
+        private void reporteDeComprasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formReportedeCompras = new FormReportedeCompras();
+            formReportedeCompras.CargarDatos(_comprasBL);
+            formReportedeCompras.MdiParent = this;
+
+            formReportedeCompras.Show();
+        }
     }
 }

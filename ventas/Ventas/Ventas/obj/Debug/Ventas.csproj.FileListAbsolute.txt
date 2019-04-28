@@ -70,3 +70,5 @@ E:\Proyectos L2\ventas\Ventas\Ventas\obj\Debug\Ventas.Login.resources
 E:\Proyectos L2\ventas\Ventas\Ventas\obj\Debug\Ventas.Menu.resources
 E:\Proyectos L2\ventas\Ventas\Ventas\obj\Debug\Ventas.Properties.Resources.resources
 E:\Proyectos L2\ventas\Ventas\Ventas\obj\Debug\Ventas.csproj.GenerateResource.Cache
+C:\Users\marco\OneDrive\Documentos\Proyectos L2\ventas\Ventas\Ventas\obj\Debug\Ventas.FormReporteProveedores.resources
+C:\Users\marco\OneDrive\Documentos\Proyectos L2\ventas\Ventas\Ventas\obj\Debug\Ventas.FormReportedeCompras.resources
