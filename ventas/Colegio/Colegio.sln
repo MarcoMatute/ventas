@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colegio", "Colegio\Colegio.csproj", "{EB5CEEB5-8B4E-4FCA-B217-B9B7A87E7DE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alumno.BL", "Alumno.BL\Alumno.BL.csproj", "{8098512B-54DE-463E-B05C-E40BF7F1B76C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB5CEEB5-8B4E-4FCA-B217-B9B7A87E7DE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB5CEEB5-8B4E-4FCA-B217-B9B7A87E7DE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB5CEEB5-8B4E-4FCA-B217-B9B7A87E7DE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB5CEEB5-8B4E-4FCA-B217-B9B7A87E7DE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8098512B-54DE-463E-B05C-E40BF7F1B76C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8098512B-54DE-463E-B05C-E40BF7F1B76C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8098512B-54DE-463E-B05C-E40BF7F1B76C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8098512B-54DE-463E-B05C-E40BF7F1B76C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ventass
+namespace Colegio
 {
-    public partial class Form1 : Form
+    public partial class FormEncargado : Form
     {
-        public Form1()
+        public FormEncargado()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Piensa,Cree,sueña y vive ");
         }
     }
 }
